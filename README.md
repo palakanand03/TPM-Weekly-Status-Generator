@@ -40,11 +40,15 @@ Cursor updated the script to show a clear error message instead of a technical t
 
 I tested this using an incorrect filename and then ran the script again with the correct tracker. Both client reports were generated successfully.
 
-## AI error and correction (verified during review)
+## AI Review and Testing
 
-**Issue checked:** A report generator could accidentally put Ledger risks in the Kavach client report (or vice versa) if it reads every risk row without filtering by project.
+I used Cursor AI to review the report generator and improve its error handling.
 
-**Correction:** Filter the risks using `row['Project'] == project` before generating each report. I checked the resulting files: the Kavach report contains only Kavach risks and the Ledger report contains only Ledger risks. This is a verified safeguard, not a claim that a separate Claude/Cursor run produced the error. If the assignment requires an actual AI mistake, document one you encounter while using your chosen coding assistant.
+The original script could show a technical error when the Excel file was missing. I asked Cursor to make the message easier to understand.
+
+After the change, I tested the script with an incorrect filename and then with the correct Excel tracker. Both client reports generated successfully.
+
+I also checked that Kavach and Ledger risks appeared only in their respective reports.
 
 ## Limitations
 

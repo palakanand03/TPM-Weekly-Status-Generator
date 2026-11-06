@@ -22,7 +22,7 @@ The tool creates `reports/kavach_weekly_report.md` and `reports/ledger_weekly_re
 
 Instead of copying project details into two updates each week, I can update the tracker once, run the script, and review the two reports before sending them. The report generator filters issues by project so client information is not mixed.
 
-## Example AI prompts used to guide the solution
+## AI Prompts Used in Cursor
 
 **Prompt 1 – Error Handling**
 
@@ -31,6 +31,14 @@ Instead of copying project details into two updates each week, I can update the 
 Please review report_generator.py and make one small improvement: if the Excel file is missing, show a clear, user-friendly error message instead of a technical traceback.
 
 Keep the code simple, preserve the existing functionality, and explain what you changed."
+
+## AI-Assisted Improvement
+
+While reviewing the tool in Cursor, I asked AI to improve how the script handles missing Excel files.
+
+Cursor updated the script to show a clear error message instead of a technical traceback.
+
+I tested this using an incorrect filename and then ran the script again with the correct tracker. Both client reports were generated successfully.
 
 ## AI error and correction (verified during review)
 

@@ -24,11 +24,13 @@ Instead of copying project details into two updates each week, I can update the 
 
 ## Example AI prompts used to guide the solution
 
-- "Create a small Python tool that reads my Task 5 Excel tracker and produces separate weekly status reports for Kavach and Ledger. Keep it simple and easy to run."
-- "Include each project's RAG status, next milestone and date, main problem, and its own risks with owners, actions, and due dates."
-- "Make the tool work without third-party Python libraries and add a README with run instructions."
+**Prompt 1 – Error Handling**
 
-**Prompt disclosure:** These are representative prompts for this AI-assisted build. If you use Claude Code or Cursor yourself, replace them with the exact prompts from your session before submission.
+"I have built a Python tool that reads an Excel project tracker and generates weekly status reports for Kavach and Ledger. The script is working.
+
+Please review report_generator.py and make one small improvement: if the Excel file is missing, show a clear, user-friendly error message instead of a technical traceback.
+
+Keep the code simple, preserve the existing functionality, and explain what you changed."
 
 ## AI error and correction (verified during review)
 
